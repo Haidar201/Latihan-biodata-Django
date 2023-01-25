@@ -1,0 +1,20 @@
+<form action="/home/" method="POST">
+    {%csrf_token%}
+    {% for a in num1%}
+        <h2>Sekolah nomor {{ forloop.counter }}</h2>
+        {{edu.as_p}}
+        <br></br>
+    {% endfor %}
+    
+    <p>=======================================================================================</p>
+    
+    {% for a in num2%}
+        <h2>Pengalaman nomor {{ forloop.counter }}</h2>
+        {{exp.as_p}}
+        <br></br>
+    {% endfor %}
+
+    <br></br>
+    <button type="submit" value="save">Submit</button>
+</form>
+  

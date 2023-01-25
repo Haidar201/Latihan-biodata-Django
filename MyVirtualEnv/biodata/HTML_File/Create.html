@@ -1,0 +1,10 @@
+<form action="/extra/" method="post">
+  {%csrf_token%} {{bio.as_p}}
+  <label for="education">Berapa jumlah sekolah anda</label>
+  <input type="number" name="loop1" />
+  <br></br>
+  <label for="experience">Berapa jumlah pengalaman yang anda miliki</label>
+  <input type="number" name="loop2" />
+  <br></br>
+  <button type="submit" value="save">Submit</button>
+</form>
