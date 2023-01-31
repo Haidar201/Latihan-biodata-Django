@@ -1,0 +1,14 @@
+<form action="/Home/" method="get">
+  {%csrf_token%}
+  <label>Pilih data yang mau diupdate</label>
+    {% for isi in bios %}
+    <br></br>
+      {% for data in isi %}
+        
+        <a href="/update/{{data}}">{{data}}</a>
+       
+      {% endfor %}
+    <br>
+    {% endfor %}
+  </table>
+</form>

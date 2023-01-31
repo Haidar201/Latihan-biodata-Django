@@ -14,7 +14,6 @@ class Bio(models.Model):
     Nama = models.CharField('Nama',max_length=30)
     Alamat = models.TextField('Alamat', null = True, blank=True)
     No_Ktp = models.CharField('No KTP', max_length=16)
-    Foto = models.ImageField(null = True)
 
     def __str__(self):
         return self.Nama

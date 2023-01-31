@@ -55,7 +55,7 @@ ROOT_URLCONF = 'biodata.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,"HTML_File")],#it will search where the manage.file will be locate, and add the HTML_File folder
+        'DIRS': [os.path.join(BASE_DIR,"templates")],#it will search where the manage.file will be locate, and add the HTML_File folder
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -9,8 +9,7 @@ class Bio_form(forms.ModelForm):
         fields = [
             'Nama',
             'Alamat',
-            'No_Ktp',
-            'Foto'  
+            'No_Ktp', 
         ]
 
 class Edu_form(forms.ModelForm):

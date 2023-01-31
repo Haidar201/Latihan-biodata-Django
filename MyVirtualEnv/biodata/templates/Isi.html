@@ -1,0 +1,28 @@
+<form action="/Home/" method="get">
+  {%csrf_token%}
+  <label>Isi Biodata</label>
+    {% for isi in data %}
+    <br></br>
+      <p>Nama = {{isi.Nama}}</p>
+      <p>Alamat = {{isi.Alamat}}</p>
+      <p>No. KTP = {{isi.No_Ktp}}</p>
+    <br>
+    {% endfor %}
+    {% for isi_p in education %}
+    <br></br>
+      <p>Sekolah = {{isi_p.Sekolah}}</p>
+      <p>Jurusan = {{isi_p.Jurusan}}</p>
+      <p>Tahun Masuk = {{isi_p.Masuk}}</p>
+      <p>Tahun Keluar = {{isi_p.Keluar}}</p>
+    <br>
+    {% endfor %}
+
+    {% for isi_e in experience %}
+    <br></br>
+      <p>Perusahaan = {{isi_e.Perusahaan}}</p>
+      <p>Jabatan = {{isi_e.Jabatan}}</p>
+      <p>Tahun = {{isi_e.Duration}}</p>
+      <p>Keterangan = {{isi_e.Keterangan}}</p>
+    <br>
+    {% endfor %}
+</form>

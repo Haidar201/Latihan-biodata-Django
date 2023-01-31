@@ -1,0 +1,14 @@
+<form action="/Home/" method="get">
+  {%csrf_token%}
+  <label>Isi Biodata</label>
+    {% for isi in bios %}
+    <br></br>
+      {% for data in isi %}
+        
+        <a href="/read/{{data}}">{{data}}</a>
+       
+      {% endfor %}
+    <br>
+    {% endfor %}
+  </table>
+</form>
